@@ -3,20 +3,24 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>FREIDEAS | Creamos lo que imaginas</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
+<title>FREIDEAS | Espacios comerciales con identidad</title>
+<meta name="description" content="Diseno interior, carpinteria especializada y mobiliario en melamina para espacios comerciales y residenciales.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Average+Sans&family=Cabin:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
-
 </head>
 <body>
 
-<!-- NAVBAR -->
 <nav class="navbar">
-  <div class="logo">
+  <a class="brand" href="#top" aria-label="Ir al inicio">
     <img src="images/logo.png" alt="FREIDEAS">
-  </div>
-  <ul>
+  </a>
+  <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-menu">
+    <span></span>
+    <span></span>
+  </button>
+  <ul id="main-menu" class="nav-links">
     <li><a href="#about">Nosotros</a></li>
     <li><a href="#services">Servicios</a></li>
     <li><a href="#projects">Proyectos</a></li>
@@ -24,131 +28,256 @@
   </ul>
 </nav>
 
-<!-- HERO -->
-<header class="hero">
-  <div class="overlay reveal">
-    <h1>Creamos lo que imaginas</h1>
-    <p>Especialistas en mobiliario en melamina, diseño interior y servicios generales de alta calidad.</p>
-    <a href="#contact" class="btn">Solicitar Asesoría</a>
-  </div>
-</header>
+<main id="top">
+  <header class="hero">
+    <div class="hero-frame">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">FREIDEAS</p>
+        <h1>Disenamos espacios que elevan tu proyecto.</h1>
+        <p class="hero-text">Interiores, mobiliario y acabados con una propuesta visual limpia, funcional y comercial.</p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary">Solicita tu asesoria</a>
+        </div>
+      </div>
+    </div>
+  </header>
 
-<!-- QUIENES SOMOS -->
-<section id="about" class="section reveal two-columns">
-  <div>
-    <img src="images/about.jpg" class="img-rounded">
-  </div>
-  <div>
-    <h2>¿Quiénes Somos?</h2>
-    <p>Somos especialistas en proyectos de interiores y acabados modernos.
-    Combinamos creatividad, análisis y ejecución estratégica para transformar espacios funcionales y elegantes.</p>
-  </div>
-</section>
+  <section id="about" class="section section-light">
+    <div class="section-heading reveal">
+      <p class="eyebrow">Nosotros</p>
+      <h2>Disenamos ambientes que combinan estetica, operacion y recordacion de marca.</h2>
+    </div>
+    <div class="split-layout">
+      <div class="image-stack reveal">
+        <div class="image-stack-main">
+          <img src="images/hero.jpg" alt="Proyecto de carpinteria y diseno interior">
+        </div>
+        <div class="image-stack-note">
+          <span>FREIDEAS</span>
+          <p>Especialistas en proyectos de interiores, mobiliario y acabados modernos.</p>
+        </div>
+      </div>
+      <div class="copy-block reveal">
+        <p>Trabajamos cada proyecto con una mirada integral: entendemos el espacio, proponemos una direccion visual clara y ejecutamos con atencion al detalle para lograr ambientes funcionales y memorables.</p>
+        <p>Nuestra fortaleza esta en unir creatividad, analisis y fabricacion para transformar ideas en espacios listos para usarse.</p>
+        <div class="feature-grid">
+          <article class="feature-card">
+            <h3>Concepto</h3>
+            <p>Definimos una propuesta visual coherente con tu negocio o estilo de vida.</p>
+          </article>
+          <article class="feature-card accent">
+            <h3>Ejecucion</h3>
+            <p>Convertimos el diseno en una implementacion limpia, funcional y durable.</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<!-- POR QUE ELEGIRNOS -->
-<section class="section reveal">
-  <h2>¿Por qué elegirnos?</h2>
-  <div class="grid-3">
-    <div class="card">Diseño que impulsa resultados</div>
-    <div class="card">Experiencia del cliente al centro</div>
-    <div class="card">Innovación y ejecución garantizada</div>
-  </div>
-</section>
+  <section class="section section-texture">
+    <div class="section-heading reveal center">
+      <p class="eyebrow">Valor diferencial</p>
+      <h2>Una experiencia mas cuidada en cada etapa del proyecto.</h2>
+    </div>
+    <div class="benefits-grid">
+      <article class="benefit-card reveal">
+        <span class="benefit-number">01</span>
+        <h3>Diseno que se entiende</h3>
+        <p>Propuestas visuales claras, con materiales, proporciones y recorridos pensados para usarse bien.</p>
+      </article>
+      <article class="benefit-card reveal featured">
+        <span class="benefit-number">02</span>
+        <h3>Materialidad con presencia</h3>
+        <p>Paletas calidas, texturas y soluciones en melamina que elevan la percepcion del espacio.</p>
+      </article>
+      <article class="benefit-card reveal">
+        <span class="benefit-number">03</span>
+        <h3>Seguimiento real</h3>
+        <p>Acompanamos el proceso desde la idea hasta la entrega final para que todo mantenga la misma intencion.</p>
+      </article>
+    </div>
+  </section>
 
-<!-- SERVICIOS -->
-<section id="services" class="section reveal">
-  <h2>Nuestros Servicios</h2>
-  <div class="grid-3">
-    <div class="card">Diseño Interior</div>
-    <div class="card">Mobiliario en Melamina</div>
-    <div class="card">Remodelaciones</div>
-    <div class="card">Servicios Generales</div>
-    <div class="card">Acabados</div>
-    <div class="card">Carpintería Especializada</div>
-  </div>
-</section>
+  <section id="services" class="section section-light">
+    <div class="section-heading reveal">
+      <p class="eyebrow">Servicios</p>
+      <h2>Las mismas secciones de tu web, ahora con una presentacion mas solida y comercial.</h2>
+    </div>
+    <div class="services-grid">
+      <article class="service-card reveal">
+        <h3>Diseno Interior</h3>
+        <p>Distribucion, ambientacion y lenguaje visual para espacios con identidad propia.</p>
+      </article>
+      <article class="service-card reveal">
+        <h3>Mobiliario en Melamina</h3>
+        <p>Fabricacion a medida para optimizar uso, presencia y almacenamiento.</p>
+      </article>
+      <article class="service-card reveal">
+        <h3>Remodelaciones</h3>
+        <p>Intervenciones parciales o integrales para renovar espacios con mejor desempeno.</p>
+      </article>
+      <article class="service-card reveal">
+        <h3>Servicios Generales</h3>
+        <p>Soluciones complementarias para la correcta implementacion de cada proyecto.</p>
+      </article>
+      <article class="service-card reveal">
+        <h3>Acabados</h3>
+        <p>Detalles finales que elevan la percepcion del ambiente y su durabilidad.</p>
+      </article>
+      <article class="service-card reveal">
+        <h3>Carpinteria Especializada</h3>
+        <p>Piezas personalizadas con enfoque tecnico y estetico para espacios exigentes.</p>
+      </article>
+    </div>
+  </section>
 
-<!-- PORTAFOLIO -->
-<section id="projects" class="section reveal">
-  <h2>Portafolio</h2>
-  <div class="carousel">
-    <img src="images/project1.jpg">
-    <img src="images/project2.jpg">
-    <img src="images/project3.jpg">
-  </div>
-</section>
+  <section id="projects" class="section section-dark">
+    <div class="section-heading reveal">
+      <p class="eyebrow">Portafolio</p>
+      <h2>Una portada con mas dinamismo visual para presentar tus proyectos.</h2>
+    </div>
+    <div class="projects-showcase">
+      <article class="project-tile reveal tall">
+        <img src="images/hero.jpg" alt="Proyecto de mobiliario">
+        <div class="project-copy">
+          <p>Comercial</p>
+          <h3>Ambientes que mejoran la experiencia del cliente.</h3>
+        </div>
+      </article>
+      <article class="project-tile reveal">
+        <img src="images/hero.jpg" alt="Proyecto corporativo">
+        <div class="project-copy">
+          <p>Corporativo</p>
+          <h3>Oficinas modernas con orden, calidez y caracter.</h3>
+        </div>
+      </article>
+      <article class="project-tile reveal">
+        <img src="images/hero.jpg" alt="Proyecto residencial">
+        <div class="project-copy">
+          <p>Residencial</p>
+          <h3>Diseno interior y acabados que elevan la vida diaria.</h3>
+        </div>
+      </article>
+    </div>
+  </section>
 
-<!-- CASOS DE EXITO -->
-<section class="section reveal">
-  <h2>Casos de Éxito</h2>
-  <div class="grid-3">
-    <div class="card">Proyecto Corporativo XYZ</div>
-    <div class="card">Oficinas Modernas ABC</div>
-    <div class="card">Remodelación Residencial 2025</div>
-  </div>
-</section>
+  <section class="section section-light success-section">
+    <div class="section-heading reveal center">
+      <p class="eyebrow">Casos de exito</p>
+      <h2>Tu contenido original, con una narrativa visual mas cercana a una marca de interiorismo.</h2>
+    </div>
+    <div class="success-grid">
+      <article class="success-card reveal">
+        <h3>Proyecto Corporativo XYZ</h3>
+        <p>Redefinicion del espacio de trabajo para mejorar orden, percepcion y funcionalidad.</p>
+      </article>
+      <article class="success-card reveal">
+        <h3>Oficinas Modernas ABC</h3>
+        <p>Una propuesta de diseno sobria y calida, alineada con una imagen mas profesional.</p>
+      </article>
+      <article class="success-card reveal">
+        <h3>Remodelacion Residencial 2025</h3>
+        <p>Optimizacion integral del ambiente con carpinteria, acabados y mejor aprovechamiento del espacio.</p>
+      </article>
+    </div>
+  </section>
 
-<!-- SOCIOS -->
-<section class="section slider">
-  <h2>Socios Estratégicos</h2>
-  <div class="slider-track">
-    <img src="images/socio1.png">
-    <img src="images/socio1.png">
-    <img src="images/socio1.png">
-    <img src="images/socio1.png">
-  </div>
-</section>
+  <section class="section partners-section">
+    <div class="section-heading reveal center">
+      <p class="eyebrow">Socios estrategicos</p>
+      <h2>Marcas y aliados que acompanan nuestros procesos.</h2>
+    </div>
+    <div class="logo-marquee">
+      <div class="logo-track">
+        <span>ACABADOS</span>
+        <span>MELAMINA</span>
+        <span>INTERIORES</span>
+        <span>PROYECTOS</span>
+        <span>CARPINTERIA</span>
+        <span>DISENO</span>
+        <span>ACABADOS</span>
+        <span>MELAMINA</span>
+        <span>INTERIORES</span>
+        <span>PROYECTOS</span>
+      </div>
+    </div>
+  </section>
 
-<!-- CONTACTO -->
-<section id="contact" class="section reveal">
-  <h2>Contáctanos</h2>
+  <section id="contact" class="section contact-section">
+    <div class="contact-shell">
+      <div class="contact-copy reveal">
+        <p class="eyebrow">Contacto</p>
+        <h2>Agenda una asesoria y llevemos tu idea a una propuesta concreta.</h2>
+        <p>Si ya tienes una referencia visual o una necesidad especifica, podemos empezar por ahi y construir una primera propuesta localmente.</p>
+        <div class="contact-details">
+          <p><strong>RUC:</strong> 20614247852</p>
+          <p><strong>Email:</strong> fredideaseirl@gmail.com</p>
+          <p><strong>Telefono:</strong> 966 214 614</p>
+        </div>
+      </div>
+      <form class="contact-form reveal">
+        <input type="text" placeholder="Nombre completo" required>
+        <input type="email" placeholder="Correo electronico" required>
+        <input type="text" placeholder="Tipo de proyecto">
+        <textarea rows="4" placeholder="Cuentanos que ambiente quieres transformar"></textarea>
+        <button type="submit" class="btn btn-primary">Enviar solicitud</button>
+      </form>
+    </div>
+  </section>
+</main>
 
-  <form>
-    <input type="text" placeholder="Nombre Completo" required>
-    <input type="email" placeholder="Correo" required>
-    <input type="text" placeholder="Tipo de Proyecto">
-    <button type="submit" class="btn">Enviar</button>
-  </form>
-
-  <div class="contact-info">
-    <p><strong>RUC:</strong> 20614247852</p>
-    <p><strong>Email:</strong> FREDIDEASEIRL@GMAIL.COM</p>
-    <p><strong>Teléfono:</strong> 966214614</p>
-  </div>
-</section>
-
-<footer>
-  © 2026 FREIDEAS
+<footer class="footer">
+  <p>&copy; 2026 FREIDEAS. Diseno, carpinteria y ejecucion con enfoque integral.</p>
 </footer>
 
-<!-- WHATSAPP -->
-<a href="https://wa.me/51966214614" class="whatsapp" target="_blank">💬</a>
+<a href="https://wa.me/51966214614" class="floating-action whatsapp" target="_blank" rel="noreferrer" aria-label="Escribir por WhatsApp">
+  W
+</a>
 
-<!-- CHATBOT -->
-<div class="chatbot" onclick="toggleChat()">🤖</div>
+<button class="floating-action chatbot" type="button" aria-controls="chatbox" aria-expanded="false">
+  +
+</button>
 
 <div class="chatbox" id="chatbox">
-  <h4>Hola 👋 soy María</h4>
-  <p>Estoy aquí para ayudarte con tu proyecto. ¿Cuál es tu nombre?</p>
-  <input type="text" placeholder="Tu nombre">
+  <h4>Hola, soy Maria</h4>
+  <p>Estoy aqui para ayudarte con tu proyecto. Que espacio quieres renovar?</p>
+  <input type="text" placeholder="Escribe tu respuesta">
 </div>
 
 <script>
-function toggleChat(){
-  const chat = document.getElementById("chatbox");
-  chat.style.display = chat.style.display === "block" ? "none" : "block";
-}
+const toggleButton = document.querySelector(".menu-toggle");
+const navLinks = document.querySelector(".nav-links");
+const chatbotButton = document.querySelector(".chatbot");
+const chatbox = document.getElementById("chatbox");
+const revealItems = document.querySelectorAll(".reveal");
 
-window.addEventListener("scroll", function(){
-  const reveals = document.querySelectorAll(".reveal");
-  reveals.forEach(el=>{
-    const windowHeight = window.innerHeight;
-    const elementTop = el.getBoundingClientRect().top;
-    if(elementTop < windowHeight - 100){
-      el.classList.add("active");
+toggleButton.addEventListener("click", () => {
+  const expanded = toggleButton.getAttribute("aria-expanded") === "true";
+  toggleButton.setAttribute("aria-expanded", String(!expanded));
+  navLinks.classList.toggle("open");
+});
+
+chatbotButton.addEventListener("click", () => {
+  const expanded = chatbotButton.getAttribute("aria-expanded") === "true";
+  chatbotButton.setAttribute("aria-expanded", String(!expanded));
+  chatbox.classList.toggle("visible");
+});
+
+const revealOnScroll = () => {
+  revealItems.forEach((item) => {
+    const top = item.getBoundingClientRect().top;
+    if (top < window.innerHeight - 100) {
+      item.classList.add("active");
     }
   });
+};
+
+window.addEventListener("scroll", () => {
+  document.querySelector(".navbar").classList.toggle("scrolled", window.scrollY > 24);
+  revealOnScroll();
 });
+
+revealOnScroll();
 </script>
 
 </body>
